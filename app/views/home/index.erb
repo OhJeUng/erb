@@ -30,12 +30,12 @@
         </header>
         <!-- Header -->
         <header id="header" class="alt">
-            <h1 id="logo"><a href="/">상지대학교 <span>강의평가</span></a></h1>
+            <h1 id="logo"><a href="#">상지대학교 <span>강의평가</span></a></h1>
             <nav id="nav">
                 <ul>
                     <li class="current"><a href="/">홈으로</a></li>
                     <li class="current"><a href="home/rating">강의평가</a></li>
-                    <li class="current"><a href="home/freedom">게시판</a></li>
+                    <li class="current"><a href="home/freedom">건의사항</a></li>
                     <li><a href="#" class="button special">로그인</a></li>
                 </ul>
             </nav>
@@ -195,19 +195,6 @@
                     xfbml: true, // parse social plugins on this page
                     version: 'v2.6' // use version 2.2
                 });
-
-                // Now that we've initialized the JavaScript SDK, we call 
-                // FB.getLoginStatus().  This function gets the state of the
-                // person visiting this page and can return one of three states to
-                // the callback you provide.  They can be:
-                //
-                // 1. Logged into your app ('connected')
-                // 2. Logged into Facebook, but not your app ('not_authorized')
-                // 3. Not logged into Facebook and can't tell if they are logged into
-                //    your app or not.
-                //
-                // These three cases are handled in the callback function.
-
                 FB.getLoginStatus(function(response) {
                     statusChangeCallback(response);
                 });

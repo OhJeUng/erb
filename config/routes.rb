@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
-  root "home#index"
+  root 'home#index'
   get 'home/rating'
   post 'home/rating'  
 
@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   
   get 'home/freedom'
   
+  get 'home/rating2'
+  
   
   # 이소정
   get 'home/PHM'
@@ -20,14 +22,14 @@ Rails.application.routes.draw do
   get 'home/hang'
   
   # 오제웅
-  get 'home/nures'
-  get 'home/ConstructionSystem'
-  get 'home/MAIE'
-  get 'home/BAD'
-  get 'home/DE'
-  get 'home/Tourism'
-  get 'home/KLAL'
-  get 'home/test'
+  get 'home/nures' #간호학과
+  get 'home/ConstructionSystem' #건설시스템공학
+  get 'home/MAIE' #경영정보학과
+  get 'home/BAD'  #경영학과
+  get 'home/DE'   #경제학과
+  get 'home/Tourism'  #관광학과
+  get 'home/KLAL' #국어국문학과
+  get 'home/test' 
   
   #이철승
   get 'home/design'
