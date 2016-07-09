@@ -1,5 +1,11 @@
-<a href="/"><h1>Home</h1></a>
-<center><h1>건의사항</h1></center>
+<section id="contact">
+<div class="container">
+<div class="row">
+	<div class="col-lg-12 text-center">
+		<h2>건의 사항</h2>
+		<hr class="star-primary">
+	</div>
+</div>
 <form style="margin-top: 40px" action="/home/freedom" method="POST">
 	<div class="form-group">
 		<label for="exampleInputPassword1">제목</label>
@@ -10,21 +16,11 @@
 	<button type="submit" class="btn btn-default">입력</button>
 	<hr>
 </form>
-<% @posts.each do |p| %>
-<div class="well">
-	<span style="font-weight:bold;">
-	제목: <%=p.title %></span>
 
-	</br>
-	내용: <%=p.content %><br>
-	<hr>
-	<% p.comments.each do |c| %> #댓글 <%=c.content %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%=c.created_at %></br>
-	<% end %>
-	<form style="margin-top: 40px" action="/home/freedom/comment_write" method="POST">
-		<input type="hidden" value="<%=p.id %>" name="id_of_post"> <input type="text" name="content" class="form-control" id="exampleInputPassword1" placeholder="댓글을 입력해주세요">
-		<br>
-		<button type="submit" class="btn btn-default">입력</button>
-	</form>
+<% @posts.each do |p| %>
+<%= p.title %>
+<%= p.content %>
+<%end%>
+
 </div>
-<% end %>
-</div>
+</section>

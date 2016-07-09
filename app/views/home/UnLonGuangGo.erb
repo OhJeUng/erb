@@ -1,0 +1,2940 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+    <article id="main">
+
+        <header class="special container">
+            <a href="/index"><span class="icon fa-mobile"></span></a>
+            <a href="/"><h2>상지대학교  <strong>강의평가 게시판</strong></h2></a>
+            <p>후배님들 강의평가를 잘 보시고 다음 후배님들을 위해 평가를 남기시지 말입니다.</p>
+
+        </header>
+        <!-- Single button -->
+        <!-- One -->
+    </article>
+    <META http-equiv=Cache-Control content=no-cache>
+    <META http-equiv=Expires content=0>
+    <META http-equiv=Pragma content=no-cache>
+    <meta http-equiv=Content-Type content="text/html;charset=euc-kr">
+    <LINK href="./main/util.htm" type=text/css rel=stylesheet>
+    <META content="MSHTML 6.00.2900.2769" name=GENERATOR>
+    <script type="text/javascript" src="assets/js/facebook.js"></script>
+
+
+    <!언론광고학부>
+    <!-- 미디어영어 시작 -->
+
+
+    <script langauage="javascript">
+        <!-- 
+        function hidestatus() {
+            window.status = ''
+            return true
+        }
+
+        if (document.layers)
+            document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT)
+
+        document.onmouseover = hidestatus
+        document.onmouseout = hidestatus
+            //-->
+    </script>
+
+</HEAD>
+
+<STYLE type=text/css>
+    BODY {
+        FONT-SIZE: 9pt
+    }
+    
+    FONT {
+        FONT-SIZE: 9pt;
+        LINE-HEIGHT: 16pt
+    }
+    
+    A:link {
+        TEXT-DECORATION: none
+    }
+    
+    A:visited {
+        TEXT-DECORATION: none
+    }
+    
+    A:active {
+        TEXT-DECORATION: none
+    }
+</STYLE>
+
+<script>
+    if (self.name != 'reload') {
+        self.name = 'reload';
+        self.location.reload(true);
+    } else self.name = '';
+</script>
+
+
+
+
+<!--2006.09.22 추가 park sang chul  -->
+
+
+<script language="javascript">
+    function fnQues() {
+        // if(alert("교원 및 재학생은 홈페이지를 통하여 로그인 후 사용하세요.")){
+        if (confirm("교원 및 재학생은 홈페이지를 통하여 로그인 후 사용하세요. 학적정보로 이동 하시겠습니까?", 0)) {
+            parent.location.href = "http://hakjuk.sangji.ac.kr/index_direct.jsp"
+                //  parent.location.href = "http://www.sangji.ac.kr"
+        } else {
+            parent.location.href = "http://www.sangji.ac.kr"
+            return;
+        }
+
+        //	alert("홈페이지 로그인 후 사용하세요.");
+        //	parent.location.href = "http://www.sangji.ac.kr/user/sangji/sangji.jsp";
+
+    }
+</script>
+<!------------------------------------->
+
+
+<script language="javascript">
+    //      alert("조교는 학부재학생 웹학적정보를 사용하실수 없습니다. 대학 홈페이지로 이동합니다..301 ");
+    //      parent.location.href = "http://www.sangji.ac.kr"
+</script>
+<script type="text/javascript" src="assets/js/pagemove.js"></script>
+
+
+
+<body background="../main/back.jpg" text="black" link="blue" vlink="blue" alink="blue" onKeyDown="shiftkeydown();">
+
+
+
+    <!--
+--  ***********************************************************************
+--  procedure id : (ss00803) 개설과목 select 후 출력 
+--  ***********************************************************************
+-->
+
+    <HTML>
+
+    <BODY text="black" link="blue" vlink="purple" alink="red">
+        <CENTER>
+
+
+
+            <!--드랍박스 시작-->
+
+            <BODY TEXT="black" LINK="blue" VLINK="purple" ALINK="red">
+
+
+
+                <div class=container>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                인문사회과학대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:KLAL()">국어국문학과</a></li>
+                        <li><a href="javascript:SocialWelfare()">사회복지학과</a></li>
+                        <li><a href="javascript:china()">중국학과</a></li>
+                        <li><a href="javascript:YungMeUhMoon()">영미어문학부</a></li>
+                        <li><a href="javascript:hangjung()">행정학부</a></li>
+                        <li><a href="javascript:UnLonGuangGo()">언론광고학부</a></li>
+                        <li><a href="javascript:MoonHwaContents()">문화콘텐츠학과</a></li>
+                        <li><a href="javascript:BubBooDongSan()">법부동산학부</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                  경상대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:BAD()">경영학과</a></li>
+                        <li><a href="javascript:HweGye()">회계학과</a></li>
+                        <li><a href="#">창업경영학과</a></li>
+                        <li><a href="javascript:Tourism()">관광학부</a></li>
+                        <li><a href="javascript:gyungje()">경제학과</a></li>
+                        <li><a href="javascript:MooYuk()">무역학과</a></li>
+                        <li><a href="#">국제비지니스학과</a></li>
+                        <li><a href="javascript:MAIE()">경영정보학과</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                생명자원과학대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:SanLim()">산림과학과</a></li>
+                        <li><a href="javascript:ChinHwanGyung()">친환경식물학부</a></li>
+                        <li><a href="javascript:DongMoolSangMyung()">동물생명자원학부</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                  이공과대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:WoongYongGwaHak()">응용물리전자학과</a></li>
+                        <li><a href="#">정밀화학신소재학과</a></li>
+                        <li><a href="javascript:SangMyungGwaHak()">생명과학과</a></li>
+                        <li><a href="javascript:ComData()">컴퓨터데이터정보학과</a></li>
+                        <li><a href="javascript:GunSulSystem()">건설시스템공학과</a></li>
+                        <li><a href="javascript:SinEnerge()">신에너지자원공학과</a></li>
+                        <li><a href="javascript:HwanGyung()">환경공학과</a></li>
+                        <li><a href="javascript:ComputerJungBo()">컴퓨터정보공학부</a></li>
+                        <li><a href="javascript:SangHwalGwaHak()">생활과학산업학과</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                     예술체육대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:SangHwalJoHyung()">생활조형디자인학과</a></li>
+                        <li><a href="javascript:Design()">디자인학부</a></li>
+                        <li><a href="javascript:CheYoockHakGwa()">체육학부</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      한의과대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:hanE()">한의학과</a></li>
+                        <li><a href="javascript:PHM()">한의예과</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      보건과학대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:nures()">간호학과</a></li>
+                        <li><a href="javascript:hanbang()">한방의료공학과</a></li>
+                        <li><a href="javascript:WooiRyo()">의료경영학과</a></li>
+                        <li><a href="javascript:SikPoom()">식품영양학과</a></li>
+                        <li><a href="javascript:JaeYak()">제약공학과</a></li>
+                        <li><a href="javascript:MoolLeeChiRyo()">물리치료학과</a></li>
+                        <li><a href="javascript:ImSangByungLee()">임상병리학과</a></li>
+
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      교양과목<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:rating()"> 교양과목</a></li>
+                        <li><a href="javascript:DaeHakKwonJang()"> 대학권장</a></li>
+                </li>
+                </ul>
+
+            </ul>
+
+        </div>
+                <!--드랍박스 끝-->
+
+
+                <BR>
+                <div class="container">
+                    <table class="table" BORDER="1" cellspacing="0" bordercolordark="white" bordercolorlight="black" width="91%">
+                        <TR>
+                            <th width="5%" height="20px">
+                                <font size="1">구분</font>
+                            </th>
+                            <th width="5%">
+                                <font size=-1>학년</font>
+                            </th>
+                            <th>
+                                <font size=-1>교과목명</font>
+                            </th>
+                            <th width="10%">
+                                <font size=-1>과목코드</font>
+                            </th>
+                            <th width="5%">
+                                <font size=-1>학점</font>
+                            </th>
+                            <th width="5%">
+                                <font size=-1>시간</font>
+                            </th>
+                            <th>
+                                <font size=-1>교원명</font>
+                            </th>
+                            <th>
+                                <font size=-1>강좌시간</font>
+                            </th>
+                            <th>
+                                <font size=-1>강의실</font>
+                            </th>
+                            <th>
+                                <font size=-1>강의평점</font>
+                            </th>
+                            <!--	        <th ><font size=-1>���재수강인원</font></th>-->
+                            <th>
+                                <font size=-1>과제평점</font>
+                            </th>
+                        </TR>
+
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>학기</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>1</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b132" data-toggle="modal">
+                                    <font size=-1>미디어영어 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03963-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>정의철</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4114 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>100</font>
+                            </TD>
+                            <!--			<TD><font size=-1>73</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>학기</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>1</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b133" data-toggle="modal">
+                                    <font size=-1>커뮤니케이션개론 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03618-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>박용규</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>화4, 5 목3 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4114 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>100</font>
+                            </TD>
+                            <!--			<TD><font size=-1>69</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>2</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b134" data-toggle="modal">
+                                    <font size=-1>광고론 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03468-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김지은</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>금5, 6, 7 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4101 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>100</font>
+                            </TD>
+                            <!--			<TD><font size=-1>44</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>2</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b135" data-toggle="modal">
+                                    <font size=-1>신문론 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03828-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김지은</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>금2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4101 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>80</font>
+                            </TD>
+                            <!--			<TD><font size=-1>56</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>2</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b136" data-toggle="modal">
+                                    <font size=-1>영상촬영의기초 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03183-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김경환</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>수1, 2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>대학원2-501 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>40</font>
+                            </TD>
+                            <!--			<TD><font size=-1>19</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>2</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b137" data-toggle="modal">
+                                    <font size=-1>영상촬영의기초 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03183-02</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김경환</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>목1, 2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>대학원2-501 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>40</font>
+                            </TD>
+                            <!--			<TD><font size=-1>27</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>2</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b138" data-toggle="modal">
+                                    <font size=-1>컴퓨터와커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04830-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>신명희</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월6, 7, 8, 9 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>식물관-105 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>47</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>2</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b139" data-toggle="modal">
+                                    <font size=-1>한국미디어문화 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>05079-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>장영민</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>수5 목6,7 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4111, 동악-4110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>11</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b140" data-toggle="modal">
+                                    <font size=-1>광고홍보기획실습 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>05084-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김현정</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>금6, 7, 8, 9 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>40</font>
+                            </TD>
+                            <!--			<TD><font size=-1>21</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b141" data-toggle="modal">
+                                    <font size=-1>광고홍보통계 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04170-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>양문희</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월1, 2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-2109 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>12</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b142" data-toggle="modal">
+                                    <font size=-1>라디오제작실습 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03465-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김보경</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>금2, 3, 4, 5 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4102 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>24</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b143" data-toggle="modal">
+                                    <font size=-1>방송편성기획론 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03178-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>배진한</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월7, 8 수2 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>32</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b144" data-toggle="modal">
+                                    <font size=-1>비즈니스전략커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>05085-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>정의철</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>화5, 6, 7, 8 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>18</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b145" data-toggle="modal">
+                                    <font size=-1>설득커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03462-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>이희복</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>화1, 2 목2 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-2110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>20</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b146" data-toggle="modal">
+                                    <font size=-1>소셜미디어시대의취재보도 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>05080-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>박용규</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>수5, 6, 7, 8 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>29</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b147" data-toggle="modal">
+                                    <font size=-1>언론영상통계 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03960-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>배진한</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>화1, 2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-2109 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>12</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b148" data-toggle="modal">
+                                    <font size=-1>영상콘텐츠기획 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>05083-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>장영민</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월4 화6, 7 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110, 동악-4109 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>15</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b149" data-toggle="modal">
+                                    <font size=-1>조직커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04171-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>양문희</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>화3, 4 수3 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110, 동악-3110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>26</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b150" data-toggle="modal">
+                                    <font size=-1>광고비평 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04507-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>이희복</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-2110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>23</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b151" data-toggle="modal">
+                                    <font size=-1>광고홍보캠페인실습 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04763-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>이희복</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>수2, 3, 4, 5 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-2111 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>16</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b152" data-toggle="modal">
+                                    <font size=-1>모바일커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04760-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>배진한</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>목2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4110 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>22</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b153" data-toggle="modal">
+                                    <font size=-1>미디어윤리법제 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03622-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>박용규</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4111 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>31</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b154" data-toggle="modal">
+                                    <font size=-1>소셜미디어와정치 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>05087-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>정의철</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>수6, 7 목4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-4109 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>15</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b155" data-toggle="modal">
+                                    <font size=-1>영상제작실습2 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>03625-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김경환</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>화1, 2, 3, 4 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>대학원2-501 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>40</font>
+                            </TD>
+                            <!--			<TD><font size=-1>17</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font color=red>불가</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b156" data-toggle="modal">
+                                    <font size=-1>영상커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04499-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>김경환</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>월7, 8, 9 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-3104 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>25</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                        <TR>
+                            <TD align=c enter width=32>
+                                <font size=-1>전선</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>4</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <A href="#b157" data-toggle="modal">
+                                    <font size=-1>통합마케팅커뮤니케이션 ...</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>04509-01</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+                            <TD align=c enter width=32>
+                                <font size=-1>3</font>
+                            </TD>
+
+                            <TD align=c enter width=64>
+                                <font size=-1>양문희</font>
+                            </TD>
+
+                            <TD align=l eft>
+                                <font size=-1>목1, 2, 3 </font>
+                            </TD>
+                            <TD align=l eft>
+                                <font size=-1>동악-3109 </font>
+                            </TD>
+                            <TD align=c enter>
+                                <font size=-1>54</font>
+                            </TD>
+                            <!--			<TD><font size=-1>27</font>','center</TD>-->
+
+                            <TD align=c enter>
+                                <font>가능</font>
+                            </TD>
+
+                        </TR>
+
+                    </TABLE>
+
+        </CENTER>
+
+        <div class="modal modal-center fade" id="b132" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>미디어영어  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>정의철</center>
+                                    </td>
+                                    <td>
+                                        <center>월2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=332" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--미디어영어  끝-->
+        <!-- 커뮤니케이션개론 시작 -->
+        <div class="modal modal-center fade" id="b133" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>커뮤니케이션개론  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>박용규</center>
+                                    </td>
+                                    <td>
+                                        <center>화4, 5 목3</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=333" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--커뮤니케이션개론  끝-->
+        <!-- 광고론 시작 -->
+        <div class="modal modal-center fade" id="b134" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>광고론  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김지은</center>
+                                    </td>
+                                    <td>
+                                        <center>금5, 6, 7</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=334" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--광고론  끝-->
+        <!-- 신문론 시작 -->
+        <div class="modal modal-center fade" id="b135" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>신문론  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김지은</center>
+                                    </td>
+                                    <td>
+                                        <center>금2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=335" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--신문론  끝-->
+        <!-- 영상촬영의기초 시작 -->
+        <div class="modal modal-center fade" id="b136" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>영상촬영의기초  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김경환</center>
+                                    </td>
+                                    <td>
+                                        <center>수1, 2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>2학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=336" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--영상촬영의기초  끝-->
+        <!-- 영상촬영의기초 시작 -->
+        <div class="modal modal-center fade" id="b137" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>영상촬영의기초  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김경환</center>
+                                    </td>
+                                    <td>
+                                        <center>목1, 2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=337" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--영상촬영의기초  끝-->
+        <!-- 컴퓨터와커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b138" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>컴퓨터와커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>신명희</center>
+                                    </td>
+                                    <td>
+                                        <center>월6, 7, 8, 9</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=338" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--컴퓨터와커뮤니케이션  끝-->
+        <!-- 한국미디어문화 시작 -->
+        <div class="modal modal-center fade" id="b139" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>한국미디어문화  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>장영민</center>
+                                    </td>
+                                    <td>
+                                        <center>수5 목6, 7</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=339" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--한국미디어문화  끝-->
+        <!-- 광고홍보기획실습 시작 -->
+        <div class="modal modal-center fade" id="b140" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>광고홍보기획실습  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김현정</center>
+                                    </td>
+                                    <td>
+                                        <center>금6, 7, 8, 9</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=340" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--광고홍보기획실습  끝-->
+        <!-- 광고홍보통계 시작 -->
+        <div class="modal modal-center fade" id="b141" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>광고홍보통계  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>양문희</center>
+                                    </td>
+                                    <td>
+                                        <center>월1, 2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=341" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--광고홍보통계  끝-->
+        <!-- 라디오제작실습 시작 -->
+        <div class="modal modal-center fade" id="b142" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>라디오제작실습  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김보경</center>
+                                    </td>
+                                    <td>
+                                        <center>금2, 3, 4, 5</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=342" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--라디오제작실습  끝-->
+        <!-- 방송편성기획론 시작 -->
+        <div class="modal modal-center fade" id="b143" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>방송편성기획론  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>배진한</center>
+                                    </td>
+                                    <td>
+                                        <center>월7, 8 수2</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=343" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--방송편성기획론  끝-->
+        <!-- 비즈니스전략커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b144" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>비즈니스전략커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>정의철</center>
+                                    </td>
+                                    <td>
+                                        <center>화5, 6, 7, 8</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=344" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--비즈니스전략커뮤니케이션  끝-->
+        <!-- 설득커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b145" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>설득커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>이희복</center>
+                                    </td>
+                                    <td>
+                                        <center>화1, 2 목2</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=345" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--설득커뮤니케이션  끝-->
+        <!-- 소셜미디어시대의취재보도 시작 -->
+        <div class="modal modal-center fade" id="b146" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>소셜미디어시대의취재보도  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>박용규</center>
+                                    </td>
+                                    <td>
+                                        <center>수5, 6, 7, 8</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=346" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--소셜미디어시대의취재보도  끝-->
+        <!-- 언론영상통계 시작 -->
+        <div class="modal modal-center fade" id="b147" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>언론영상통계  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>배진한</center>
+                                    </td>
+                                    <td>
+                                        <center>화1, 2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=347" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--언론영상통계  끝-->
+        <!-- 영상콘텐츠기획 시작 -->
+        <div class="modal modal-center fade" id="b148" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>영상콘텐츠기획  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>장영민</center>
+                                    </td>
+                                    <td>
+                                        <center>월4 화6, 7</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=348" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--영상콘텐츠기획  끝-->
+        <!-- 조직커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b149" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>조직커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>양문희</center>
+                                    </td>
+                                    <td>
+                                        <center>화3, 4 수3</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=349" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--조직커뮤니케이션  끝-->
+        <!-- 광고비평 시작 -->
+        <div class="modal modal-center fade" id="b150" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>광고비평  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>이희복</center>
+                                    </td>
+                                    <td>
+                                        <center>월2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=350" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--광고비평  끝-->
+        <!-- 광고홍보캠페인실습 시작 -->
+        <div class="modal modal-center fade" id="b151" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>광고홍보캠페인실습  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>이희복</center>
+                                    </td>
+                                    <td>
+                                        <center>수2, 3, 4, 5</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=351" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--광고홍보캠페인실습  끝-->
+        <!-- 모바일커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b152" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>모바일커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>배진한</center>
+                                    </td>
+                                    <td>
+                                        <center>목2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=352" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--모바일커뮤니케이션  끝-->
+        <!-- 미디어윤리법제 시작 -->
+        <div class="modal modal-center fade" id="b153" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>미디어윤리법제  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>박용규</center>
+                                    </td>
+                                    <td>
+                                        <center>월2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=353" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--미디어윤리법제  끝-->
+        <!-- 소셜미디어와정치 시작 -->
+        <div class="modal modal-center fade" id="b154" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>소셜미디어와정치  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>정의철</center>
+                                    </td>
+                                    <td>
+                                        <center>수6, 7 목4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=354" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--소셜미디어와정치  끝-->
+        <!-- 영상제작실습2 시작 -->
+        <div class="modal modal-center fade" id="b155" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>영상제작실습2  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김경환</center>
+                                    </td>
+                                    <td>
+                                        <center>화1, 2, 3, 4</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=355" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--영상제작실습2  끝-->
+        <!-- 영상커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b156" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>영상커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>김경환</center>
+                                    </td>
+                                    <td>
+                                        <center>월7, 8, 9</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=356" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--영상커뮤니케이션  끝-->
+        <!-- 통합마케팅커뮤니케이션 시작 -->
+        <div class="modal modal-center fade" id="b157" tabindex="-1" role="dialog" aria-labelledby="my80sizeCenterModalLabel">
+            <div class="modal-dialog modal-80size modal-center" role="document">
+                <div class="modal-content modal-80size">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><center>통합마케팅커뮤니케이션  </center></h4>
+                    </div>
+                    <div class="modal-body">
+                        <table align="center" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <center>교수명</center>
+                                    </th>
+                                    <center>
+                                        <th>
+                                            <center>강좌 시간
+                                                <center>
+                                        </th>
+                                        </center>
+                                        <center>
+                                            <th>
+                                                <center>학점
+                                                    <center>
+                                            </th>
+                                            </center>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <center>양문희</center>
+                                    </td>
+                                    <td>
+                                        <center>목1, 2, 3</center>
+                                    </td>
+                                    <td>
+                                        <center>3학점</center>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fb-root">
+                        <center>
+
+                            <div class="fb-comments" data-href="http://connect.facebook.net/ko_KR/all.js#appId=282904155380852&amp;xfbml=357" data-numposts="5"></div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--통합마케팅커뮤니케이션  끝-->
+        </BODY>
+
+    </HTML>
+
+
+
+
+    <!--    <center><font face="돋움" size="3" color="cccccc">ss00803</font></center>-->
