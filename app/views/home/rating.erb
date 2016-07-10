@@ -13,7 +13,7 @@
         <article id="main">
 
             <header class="special container">
-                <a href="/"><span class="icon fa-mobile"></span></a>
+                <a href="javascript:home()"><span class="icon fa-mobile"></span></a>
                 <a href="/"><h2>상지대학교  <strong>강의평가 게시판</strong></h2></a>
                 <p>후배님들 강의평가를 잘 보시고 다음 후배님들을 위해 평가를 남기시지 말입니다.</p>
 
@@ -118,7 +118,15 @@
         }
         newtime = window.setTimeout("getTime();", 1000);
     }
+    
+    function rating2(){
+        location.href="rating2";
+    }
+    function home(){
+        location.href="/";
+    }
 </script>
+
 
 <STYLE type=text/css>
     BODY {
@@ -1581,8 +1589,8 @@
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li><a href="rating">1</a></li>
-                <li><a href="rating2">2</a></li>
+                <li><a href="javascript:rating()">1</a></li>
+                <li><a href="javascript:rating2()">2</a></li>
                 <li>
                     <a href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
