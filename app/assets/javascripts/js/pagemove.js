@@ -1,4 +1,11 @@
-//인문사회과학대학
+    
+    //home
+    function home(){
+        location.href="/";
+    }
+    
+    
+    //인문사회과학대학
     function KLAL(){
         location.href="KLAL";
     }
@@ -135,6 +142,9 @@
     //교양과목
     function rating(){
         location.href="rating";
+    }
+    function rating2(){
+        location.href="rating2";
     }
     function DaeHakKwonJang(){
         location.href="DaeHakKwonJang";

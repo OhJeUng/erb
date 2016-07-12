@@ -7,14 +7,13 @@
 <html>
 
 <head>
-    <title>강의평가</title>
     <div id="page-wrapper">
 
         <article id="main">
 
             <header class="special container">
                 <a href="javascript:home()"><span class="icon fa-mobile"></span></a>
-                <a href="/"><h2>상지대학교  <strong>강의평가 게시판</strong></h2></a>
+                <a href="javascript:home()"><h2>상지대학교  <strong>강의평가 게시판</strong></h2></a>
                 <p>후배님들 강의평가를 잘 보시고 다음 후배님들을 위해 평가를 남기시지 말입니다.</p>
 
                 <center>
@@ -47,12 +46,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        기기기
+        <script type="text/javascript" src="assets/js/facebook.js"></script>
+        <script type="text/javascript" src="assets/js/pagemove.js"></script>
+        <script type="text/javascript" src="assets/js/script2.js"></script>
+
 </head>
 
 <!-- Scripts -->
-<script type="text/javascript" src="assets/js/facebook.js"></script>
-<script type="text/javascript" src="assets/js/pagemove.js"></script>
+
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -62,6 +63,7 @@
 <script src="assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
+
 <SCRIPT LANGUAGE="JavaScript">
     function getTime() {
         now = new Date();
@@ -118,13 +120,6 @@
         }
         newtime = window.setTimeout("getTime();", 1000);
     }
-    
-    function rating2(){
-        location.href="rating2";
-    }
-    function home(){
-        location.href="/";
-    }
 </script>
 
 
@@ -153,6 +148,7 @@
     a {
         TEXT-DECORATION: none
     }
+    
     div {
         text-decoration: none;
     }
@@ -160,16 +156,18 @@
     .line:link {
         text-decoration: none;
     }
-    a.yim:link{
+    
+    a.yim:link {
         text-decoration: none;
     }
-    
 </STYLE>
 
 
 
 
 <body class="no-sidebar" onLoad="getTime();" background="../main/back.jpg" text="black" link="blue" vlink="blue" alink="blue" onKeyDown="shiftkeydown();" style="text-decoration: none">
+
+
 
     <CENTER>
 
@@ -197,12 +195,24 @@
                                   경상대학<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="javascript:BAD()">경영학과</a></li>
-                        <li><a href="javascript:HweGye()"><font color="red">회계학과</font></a></li>
-                        <li><a href="#"><font color="red">창업경영학과</font></a></li>
+                        <li>
+                            <a href="javascript:HweGye()">
+                                <font color="red">회계학과</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <font color="red">창업경영학과</font>
+                            </a>
+                        </li>
                         <li><a href="javascript:Tourism()">관광학부</a></li>
                         <li><a href="javascript:gyungje()">경제학과</a></li>
                         <li><a href="javascript:MooYuk()">무역학과</a></li>
-                        <li><a href="#"><font color="red">국제비지니스학과</font></a></li>
+                        <li>
+                            <a href="#">
+                                <font color="red">국제비지니스학과</font>
+                            </a>
+                        </li>
                         <li><a href="javascript:MAIE()">경영정보학과</a></li>
                     </ul>
                 </li>
@@ -211,7 +221,11 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                 생명자원과학대학<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="javascript:SanLim()"><font color="red">산림과학과</font></a></li>
+                        <li>
+                            <a href="javascript:SanLim()">
+                                <font color="red">산림과학과</font>
+                            </a>
+                        </li>
                         <li><a href="javascript:ChinHwanGyung()">친환경식물학부</a></li>
                         <li><a href="javascript:DongMoolSangMyung()">동물생명자원학부</a></li>
                     </ul>
@@ -221,15 +235,43 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                   이공과대학<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="javascript:WoongYongGwaHak()"><font color="red">응용물리전자학과</font></a></li>
-                        <li><a href="#"><font color="red">정밀화학신소재학과</font></a></li>
-                        <li><a href="javascript:SangMyungGwaHak()"><font color"red">생명과학과</font></a></li>
+                        <li>
+                            <a href="javascript:WoongYongGwaHak()">
+                                <font color="red">응용물리전자학과</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <font color="red">정밀화학신소재학과</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:SangMyungGwaHak()">
+                                <font color "red">생명과학과</font>
+                            </a>
+                        </li>
                         <li><a href="javascript:ComData()">컴퓨터데이터정보학과</a></li>
                         <li><a href="javascript:GunSulSystem()">건설시스템공학과</a></li>
-                        <li><a href="javascript:SinEnerge()"><font color="red">신에너지자원공학과</font></a></li>
-                        <li><a href="javascript:HwanGyung()"><font color="red">환경공학과</font></a></li>
-                        <li><a href="javascript:ComputerJungBo()"><font color="red">컴퓨터정보공학부</font></a></li>
-                        <li><a href="javascript:SangHwalGwaHak()"><font color="red">생활과학산업학과</font></a></li>
+                        <li>
+                            <a href="javascript:SinEnerge()">
+                                <font color="red">신에너지자원공학과</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:HwanGyung()">
+                                <font color="red">환경공학과</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:ComputerJungBo()">
+                                <font color="red">컴퓨터정보공학부</font>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:SangHwalGwaHak()">
+                                <font color="red">생활과학산업학과</font>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
@@ -238,7 +280,11 @@
                                      예술체육대학<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="javascript:SangHwalJoHyung()">생활조형디자인학과</a></li>
-                        <li><a href="javascript:Design()"><font color="red">디자인학부</font></a></li>
+                        <li>
+                            <a href="javascript:Design()">
+                                <font color="red">디자인학부</font>
+                            </a>
+                        </li>
                         <li><a href="javascript:CheYoockHakGwa()">체육학부</a></li>
                     </ul>
                 </li>
@@ -258,10 +304,18 @@
                         <li><a href="javascript:nures()">간호학과</a></li>
                         <li><a href="javascript:hanbang()">한방의료공학과</a></li>
                         <li><a href="javascript:WooiRyo()">의료경영학과</a></li>
-                        <li><a href="javascript:SikPoom()"><font color="red">식품영양학과</font></a></li>
+                        <li>
+                            <a href="javascript:SikPoom()">
+                                <font color="red">식품영양학과</font>
+                            </a>
+                        </li>
                         <li><a href="javascript:JaeYak()">제약공학과</a></li>
                         <li><a href="javascript:MoolLeeChiRyo()">물리치료학과</a></li>
-                        <li><a href="javascript:ImSangByungLee()"><font color="red">임상병리학과</font></a></li>
+                        <li>
+                            <a href="javascript:ImSangByungLee()">
+                                <font color="red">임상병리학과</font>
+                            </a>
+                        </li>
 
                     </ul>
                 </li>
@@ -270,7 +324,11 @@
                                       교양과목<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="javascript:rating()"> 교양과목</a></li>
-                        <li><a href="javascript:DaeHakKwonJang()"><font color="red">대학권장</font></a></li>
+                        <li>
+                            <a href="javascript:DaeHakKwonJang()">
+                                <font color="red">대학권장</font>
+                            </a>
+                        </li>
                 </li>
                 </ul>
 
@@ -281,7 +339,7 @@
 
         <BR>
         <div class="container" width="100px" class="line">
-             <table class="table" cellspacing="30" bordercolordark="white" width="1%" class="line">
+            <table class="table" cellspacing="30" bordercolordark="white" width="1%" class="line">
                 <TR>
                     <th width="5%" height="20px">
                         <font size="1">구분</font>
@@ -357,49 +415,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402200"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402200 = {
-                                    "id": "8402200",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j; //이철승 바보색히
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>97</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402203"></div>
-                        <script type="text/javascript">
-                           PDRTJS_settings_8402203 = {
-                                "id": "8402203",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
                     </TD>
 
                 </TR>
@@ -441,48 +464,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402201"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402201 = {
-                                    "id": "8402201",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>93</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402223"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402223 = {
-                                "id": "8402223",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
 
                     </TD>
@@ -526,26 +515,7 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402202"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402202 = {
-                                    "id": "8402202",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ?
-                                            'https://polldaddy.com/js/rating/rating.js' :
-                                            'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>82</font></TD>-->
@@ -554,24 +524,7 @@
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402224"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402224 = {
-                                "id": "8402224",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -614,48 +567,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402204"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402204 = {
-                                    "id": "8402204",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>97</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402228"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402228 = {
-                                "id": "8402228",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
 
                     </TD>
@@ -699,48 +618,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402205"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402205 = {
-                                    "id": "8402205",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>30</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402229"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402229 = {
-                                "id": "8402229",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -783,48 +668,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402206"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402206 = {
-                                    "id": "8402206",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>29</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402231"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402231 = {
-                                "id": "8402231",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -867,48 +718,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402207"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402207 = {
-                                    "id": "8402207",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>15</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402232"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402232 = {
-                                "id": "8402232",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -950,48 +767,14 @@
                     </TD>
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402278"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402278 = {
-                                "id": "8402278",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
                     <!--				<TD align = center><font size=-1>29</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402233"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402233 = {
-                                "id": "8402233",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -1034,49 +817,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402209"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402209 = {
-                                    "id": "8402209",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>80</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402234"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402234 = {
-                                "id": "8402234",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ?
-                                        'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
                     </TD>
 
                 </TR>
@@ -1117,50 +865,14 @@
                     <TD align=c enter>
                         <font size=-1>
                             <div id="pd_rating_holder_8402210"></div>
-                            <script type="text/javascript">
-                                PDRTJS_settings_8402210 = {
-                                    "id": "8402210",
-                                    "unique_id": "default",
-                                    "title": "",
-                                    "permalink": ""
-                                };
-                                (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }(document, 'script', 'pd-rating-js'));
-                            </script>
+
                         </font>
                     </TD>
                     <!--				<TD align = center><font size=-1>80</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402255"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402255 = {
-                                "id": "8402255",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                    if (!document.getElementById(j)) {
-                                        var pd = d.createElement(c),
-                                            s;
-                                        pd.id = j;
-                                        pd.src = ('https:' == document.location.protocol) ?
-                                            'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                        s = document.getElementsByTagName(c)[0];
-                                        s.parentNode.insertBefore(pd, s);
-                                    }
-                                }
-                                (document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -1201,47 +913,13 @@
                     </TD>
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402211"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402211 = {
-                                "id": "8402211",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
                     </TD>
                     <!--				<TD align = center><font size=-1>90</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402235"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402235 = {
-                                "id": "8402235",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
 
                     </TD>
@@ -1283,47 +961,12 @@
                     </TD>
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402212"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402212 = {
-                                "id": "8402212",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
                     </TD>
                     <!--				<TD align = center><font size=-1>81</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402237"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402237 = {
-                                "id": "8402237",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
 
 
                     </TD>
@@ -1366,47 +1009,13 @@
                     </TD>
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402213"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402213 = {
-                                "id": "8402213",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
                     </TD>
                     <!--				<TD align = center><font size=-1>3</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402238"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402238 = {
-                                "id": "8402238",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
 
                     </TD>
@@ -1449,47 +1058,13 @@
                     </TD>
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402214"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402214 = {
-                                "id": "8402214",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
                     </TD>
                     <!--				<TD align = center><font size=-1>99</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402239"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402239 = {
-                                "id": "8402239",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
@@ -1531,48 +1106,14 @@
                     </TD>
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402277"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402277 = {
-                                "id": "8402277",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
                     <!--				<TD align = center><font size=-1>96</font></TD>-->
 
                     <TD align=c enter>
                         <div id="pd_rating_holder_8402240"></div>
-                        <script type="text/javascript">
-                            PDRTJS_settings_8402240 = {
-                                "id": "8402240",
-                                "unique_id": "default",
-                                "title": "",
-                                "permalink": ""
-                            };
-                            (function(d, c, j) {
-                                if (!document.getElementById(j)) {
-                                    var pd = d.createElement(c),
-                                        s;
-                                    pd.id = j;
-                                    pd.src = ('https:' == document.location.protocol) ? 'https://polldaddy.com/js/rating/rating.js' : 'http://i0.poll.fm/js/rating/rating.js';
-                                    s = document.getElementsByTagName(c)[0];
-                                    s.parentNode.insertBefore(pd, s);
-                                }
-                            }(document, 'script', 'pd-rating-js'));
-                        </script>
+
 
                     </TD>
 
