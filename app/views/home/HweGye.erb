@@ -1,0 +1,856 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+	
+    <article id="main">
+
+    <header class="special container">
+        <a href="/index"><span class="icon fa-mobile"></span></a>
+        <a href="/"><h2>상지대학교  <strong>강의평가 게시판</strong></h2></a>
+        <p>후배님들 강의평가를 잘 보시고 다음 후배님들을 위해 평가를 남기시지 말입니다.</p>
+
+    </header>
+    <META http-equiv=Cache-Control content=no-cache>
+    <META http-equiv=Expires content=0>
+    <META http-equiv=Pragma content=no-cache>
+    <meta http-equiv=Content-Type content="text/html;charset=euc-kr">
+    <LINK href="./main/util.htm" type=text/css rel=stylesheet>
+    <META content="MSHTML 6.00.2900.2769" name=GENERATOR>
+
+
+
+    <!회계학과>
+
+
+
+
+
+    <script langauage="javascript">
+        <!-- 
+        function hidestatus() {
+            window.status = ''
+            return true
+        }
+
+        if (document.layers)
+            document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT)
+
+        document.onmouseover = hidestatus
+        document.onmouseout = hidestatus
+            //-->
+    </script>
+
+</HEAD>
+
+<STYLE type=text/css>
+    BODY {
+        FONT-SIZE: 9pt
+    }
+    
+    FONT {
+        FONT-SIZE: 9pt;
+        LINE-HEIGHT: 16pt
+    }
+    
+    A:link {
+        TEXT-DECORATION: none
+    }
+    
+    A:visited {
+        TEXT-DECORATION: none
+    }
+    
+    A:active {
+        TEXT-DECORATION: none
+    }
+</STYLE>
+
+<script type="text/javascript" src="assets/js/pagemove.js"></script>
+
+
+<!--2006.09.22 추가 park sang chul  -->
+<script language="javascript">
+    function fnQues() {
+        // if(alert("교원 및 재학생은 홈페이지를 통하여 로그인 후 사용하세요.")){
+        if (confirm("교원 및 재학생은 홈페이지를 통하여 로그인 후 사용하세요. 학적정보로 이동 하시겠습니까?", 0)) {
+            parent.location.href = "http://hakjuk.sangji.ac.kr/index_direct.jsp"
+                //  parent.location.href = "http://www.sangji.ac.kr"
+        } else {
+            parent.location.href = "http://www.sangji.ac.kr"
+            return;
+        }
+
+        //	alert("홈페이지 로그인 후 사용하세요.");
+        //	parent.location.href = "http://www.sangji.ac.kr/user/sangji/sangji.jsp";
+
+    }
+</script>
+<!------------------------------------->
+
+
+<script language="javascript">
+    //      alert("조교는 학부재학생 웹학적정보를 사용하실수 없습니다. 대학 홈페이지로 이동합니다..301 ");
+    //      parent.location.href = "http://www.sangji.ac.kr"
+</script>
+
+
+
+<body background="../main/back.jpg" text="black" link="blue" vlink="blue" alink="blue" onKeyDown="shiftkeydown();">
+
+
+
+    <!--
+--  ***********************************************************************
+--  procedure id : (ss00803) 개설과목 select 후 출력 
+--  ***********************************************************************
+-->
+
+    <HTML>
+
+    <BODY text="black" link="blue" vlink="purple" alink="red">
+        <CENTER>
+
+
+
+            <!--드랍박스 시작-->
+
+            <BODY TEXT="black" LINK="blue" VLINK="purple" ALINK="red">
+
+
+
+                <!--드랍박스 시작-->
+
+    
+            <div class=container>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                인문사회과학대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:KLAL()">국어국문학과</a></li>
+                        <li><a href="javascript:SocialWelfare()">사회복지학과</a></li>
+                        <li><a href="javascript:china()">중국학과</a></li>
+                        <li><a href="javascript:YungMeUhMoon()">영미어문학부</a></li>
+                        <li><a href="javascript:hangjung()">행정학부</a></li>
+                        <li><a href="javascript:UnLonGuangGo()">언론광고학부</a></li>
+                        <li><a href="javascript:MoonHwaContents()">문화콘텐츠학과</a></li>
+                        <li><a href="javascript:BubBooDongSan()">법부동산학부</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                  경상대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:BAD()">경영학과</a></li>
+                        <li><a href="javascript:HweGye()">회계학과</a></li>
+                        <li><a href="#">창업경영학과</a></li>
+                        <li><a href="javascript:Tourism()">관광학부</a></li>
+                        <li><a href="javascript:gyungje()">경제학과</a></li>
+                        <li><a href="javascript:MooYuk()">무역학과</a></li>
+                        <li><a href="#">국제비지니스학과</a></li>
+                        <li><a href="javascript:MAIE()">경영정보학과</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                생명자원과학대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:SanLim()">산림과학과</a></li>
+                        <li><a href="javascript:ChinHwanGyung()">친환경식물학부</a></li>
+                        <li><a href="javascript:DongMoolSangMyung()">동물생명자원학부</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                  이공과대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:WoongYongGwaHak()">응용물리전자학과</a></li>
+                        <li><a href="#">정밀화학신소재학과</a></li>
+                        <li><a href="javascript:SangMyungGwaHak()">생명과학과</a></li>
+                        <li><a href="javascript:ComData()">컴퓨터데이터정보학과</a></li>
+                        <li><a href="javascript:GunSulSystem()">건설시스템공학과</a></li>
+                        <li><a href="javascript:SinEnerge()">신에너지자원공학과</a></li>
+                        <li><a href="javascript:HwanGyung()">환경공학과</a></li>
+                        <li><a href="javascript:ComputerJungBo()">컴퓨터정보공학부</a></li>
+                        <li><a href="javascript:SangHwalGwaHak()">생활과학산업학과</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                     예술체육대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:SangHwalJoHyung()">생활조형디자인학과</a></li>
+                        <li><a href="javascript:Design()">디자인학부</a></li>
+                        <li><a href="javascript:CheYoockHakGwa()">체육학부</a></li>
+                    </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      한의과대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:hanE()">한의학과</a></li>
+                        <li><a href="javascript:PHM()">한의예과</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      보건과학대학<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:nures()">간호학과</a></li>
+                        <li><a href="javascript:hanbang()">한방의료공학과</a></li>
+                        <li><a href="javascript:WooiRyo()">의료경영학과</a></li>
+                        <li><a href="javascript:SikPoom()">식품영양학과</a></li>
+                        <li><a href="javascript:JaeYak()">제약공학과</a></li>
+                        <li><a href="javascript:MoolLeeChiRyo()">물리치료학과</a></li>
+                        <li><a href="javascript:ImSangByungLee()">임상병리학과</a></li>
+
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                      교양과목<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:rating()"> 교양과목</a></li>
+                        <li><a href="javascript:DaeHakKwonJang()"> 대학권장</a></li>
+                </li>
+                </ul>
+
+            </ul>
+
+        </div>
+                <!--드랍박스 끝-->
+
+
+                <BR>
+                <div class="container">
+                    <table class="table" BORDER="1" cellspacing="0" bordercolordark="white" bordercolorlight="black" width="91%">
+                        <TR>
+                            <th width="5%" height="20px">
+                                <font size="1">구분</font>
+                            </th>
+                            <th width="5%">
+                                <font size=-1>학년</font>
+                            </th>
+                            <th>
+                                <font size=-1>교과목명</font>
+                            </th>
+                            <th width="10%">
+                                <font size=-1>과목코드</font>
+                            </th>
+                            <th width="5%">
+                                <font size=-1>학점</font>
+                            </th>
+                            <th width="5%">
+                                <font size=-1>시간</font>
+                            </th>
+                            <th>
+                                <font size=-1>교원명</font>
+                            </th>
+                            <th>
+                                <font size=-1>강좌시간</font>
+                            </th>
+                            <th>
+                                <font size=-1>강의실</font>
+                            </th>
+                            <th>
+                                <font size=-1>강의평점</font>
+                            </th>
+                            <!--	        <th ><font size=-1>���재수강인원</font></th>-->
+                            <th>
+                                <font size=-1>과제평점</font>
+                            </th>
+                        </TR>
+
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>계기</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>1</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=04921&wsu15040=01&wsu15180=A15803&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>경영학원론(회계학전공)</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>04921-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>최창선</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>화7, 8, 9 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5101 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>53</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font>가능</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>계기</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>1</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=03969&wsu15040=01&wsu15180=A85013&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>회계와사회</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>03969-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>전영승</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>월2, 3, 4 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5101 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>49</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>2</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=04444&wsu15040=01&wsu15180=A86005&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>비영리회계</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>04444-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김주택</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>수2, 3 목2 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-4109 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>51</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>2</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=03638&wsu15040=01&wsu15180=A85013&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>환경경영</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>03638-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>전영승</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>화5, 6 목3 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5101 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>49</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전필</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>2</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=05063&wsu15040=01&wsu15180=A04003&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>회계원리II</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>05063-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김소형</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>화7, 8 수4 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>복합-311 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>60</font>
+                        </TD>
+                        <!--			<TD><font size=-1>48</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>2</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=02913&wsu15040=01&wsu15180=D11044&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>회계정보시스템론</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>02913-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김인성</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>월1, 2, 3 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>복합-311 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>60</font>
+                        </TD>
+                        <!--			<TD><font size=-1>33</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전필</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=03605&wsu15040=01&wsu15180=A04003&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>ERP와재무회계</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>03605-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김소형</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>월7, 8, 9 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5110 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>60</font>
+                        </TD>
+                        <!--			<TD><font size=-1>36</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전필</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=04447&wsu15040=01&wsu15180=A85013&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>관리회계</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>04447-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>전영승</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>화2, 3 목2 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5101 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>39</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=02638&wsu15040=01&wsu15180=A86005&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>조세법개론II</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>02638-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김주택</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>월2, 3, 4 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-4109 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>36</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=05065&wsu15040=01&wsu15180=D09077&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>중급회계II</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>05065-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>박문곤</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>수1, 2, 3 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5101 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>80</font>
+                        </TD>
+                        <!--			<TD><font size=-1>37</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>4</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=03971&wsu15040=01&wsu15180=A04003&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>사회현상과통계</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>03971-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김소형</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>화5, 6 목3 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-2108, 복합-306 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>45</font>
+                        </TD>
+                        <!--			<TD><font size=-1>32</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>4</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=05679&wsu15040=01&wsu15180=A04003&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>소득세인턴십실습</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>05679-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>팀티칭</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>목4, 5, 6 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>복합-306 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>20</font>
+                        </TD>
+                        <!--			<TD><font size=-1>16</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD align=c enter width=32>
+                            <font size=-1>전선</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>4</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <A href="./ss008_ss00804.jsp?wsu15030=02311&wsu15040=01&wsu15180=A86005&hakcode=241&wtemp=241000&hakyy=2016&hakgi=1">
+                                <font size=-1>회계학연습</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>02311-01</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+                        <TD align=c enter width=32>
+                            <font size=-1>3</font>
+                        </TD>
+
+                        <TD align=c enter width=64>
+                            <font size=-1>김주택</font>
+                        </TD>
+
+                        <TD align=l eft>
+                            <font size=-1>화2, 3, 4 </font>
+                        </TD>
+                        <TD align=l eft>
+                            <font size=-1>동악-5110 </font>
+                        </TD>
+                        <TD align=c enter>
+                            <font size=-1>60</font>
+                        </TD>
+                        <!--			<TD><font size=-1>39</font>','center</TD>-->
+
+                        <TD align=c enter>
+                            <font color=red>불가</font>
+                        </TD>
+
+                    </TR>
+                </table>
+            </div>
+
+                </TABLE>
+
+
+                </CENTER>
+            </BODY>
+
+    </HTML>
+
+
+
+
+    <!--    <center><font face="돋움" size="3" color="cccccc">ss00803</font></center>-->
