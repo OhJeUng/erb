@@ -1,3 +1,4 @@
+
 window.onload = function() {
     
     
@@ -203,12 +204,6 @@ window.onload = function() {
         "permalink": ""
     };
 
-
-
-
-   
-}
-
  (function(d, c, j) {
         if (!document.getElementById(j)) {
             var pd = d.createElement(c),
@@ -219,3 +214,8 @@ window.onload = function() {
             s.parentNode.insertBefore(pd, s);
         }
     }(document, 'script', 'pd-rating-js'));
+
+
+   
+}
+
